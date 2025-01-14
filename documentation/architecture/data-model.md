@@ -401,12 +401,12 @@ erDiagram
 
 All objects can be linked to user-defined labels. Labels are simple strings with no blank, regex r"\w{0:36}".
 
-Labels are attached to the root folder. They can be read by everyone, added by any contributor, and modified or deleted only by global administrators. 
+Labels are attached to the root folder. They can be read by everyone, added by any contributor, and modified or deleted only by global administrators.
 
 ```mermaid
 erDiagram
     ANY_USER_DEFINED_OBJECT   }o--o{ LABEL : has_label
- 
+
     LABEL {
         string  label
     }
@@ -1324,7 +1324,7 @@ The frontend for risk study shall propose the following steps:
   - list of strategic scenarios/attack paths
 - workshop 4: operational scenarios
   - list of operational scenarios
-  - The risk assessment is generated automatically, thanks to a dedicated button. When the risk assessment is generated again, automatic versioning is applied, and mitigations can be copied on demand (based on ref_id of operational scenarios). 
+  - The risk assessment is generated automatically, thanks to a dedicated button. When the risk assessment is generated again, automatic versioning is applied, and mitigations can be copied on demand (based on ref_id of operational scenarios).
 - workshop 5: risk treatment
   - After generation, a risk assessment is fully editable, to allow customisation, and the risk assessment can be managed normally as any other risk assessment.
   - risk treatment is based on the risk assessment.
