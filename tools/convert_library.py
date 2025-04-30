@@ -157,7 +157,7 @@ parser = argparse.ArgumentParser(
     description="convert an Excel file in a library for CISO Assistant",
 )
 parser.add_argument("input_file_name")
-parser.add_argument("--compat", action='store_true')
+parser.add_argument("--compat", action="store_true")
 args = parser.parse_args()
 
 ref_name = re.sub(r"\.\w+$", "", args.input_file_name).lower()
@@ -484,11 +484,11 @@ for tab in dataframe:
                     urn = f"{root_nodes_urn}:{ref_id_urn}"
                 else:
                     if ref_id:
-                        urn = f"{root_nodes_urn}:{ref_id.lower().replace(' ', '-')}" 
+                        urn = f"{root_nodes_urn}:{ref_id.lower().replace(' ', '-')}"
                     else:
                         p = parent_for_depth[depth]
                         c = count_for_depth[depth]
-                        urn =f"{p}:{c}"
+                        urn = f"{p}:{c}"
                         count_for_depth[depth] += 1
                 if urn in urn_unicity_checker:
                     print("URN duplicate:", urn)
