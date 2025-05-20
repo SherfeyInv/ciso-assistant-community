@@ -86,7 +86,7 @@
 		"echarts": "^5.5.1",
 		"eslint-plugin-storybook": "^0.10.2",
 		"globals": "^15.13.0",
-		"svelte-multiselect": "^10.3.0",
+		"svelte-multiselect": "^11.0.0",
 		"svelte-persisted-store": "^0.11.0"
 	}
 }
